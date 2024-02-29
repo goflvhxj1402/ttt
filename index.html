@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style/common.css">
     <title>모바일 웹페이지</title>
     <meta name="viewport" content="width=device-width">
 </head>
+
 <body>
     <header id="header">
         <h1>mobile</h1>
@@ -24,6 +26,13 @@
             <li><a href="#">버튼</a></li>
         </ul>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $("#toggleNav").hide();
+        $(".toggleBtn").on("click", function(){
+            $("#toggleNav").slideToggle();
+        })
+    </script>
     <div id="topNav">
         <ul>
             <li><a href="#">버튼</a></li>
@@ -55,4 +64,5 @@
         <small>Website Layout Basic</small>
     </footer>
 </body>
+
 </html>
